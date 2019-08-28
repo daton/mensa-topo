@@ -1,4 +1,5 @@
 importScripts('https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js');
 importScripts('https://www.gstatic.com/firebasejs/6.3.4/firebase-messaging.js');
 
 var firebaseConfig = {
@@ -20,3 +21,4 @@ messaging.setBackgroundMessageHandler(function(payload) {
     };
     return self.registration.showNotification(title, options);
 });
+
